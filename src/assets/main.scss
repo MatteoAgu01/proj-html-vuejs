@@ -6,3 +6,15 @@ $fa-font-path: './webfonts';
 
 @import 'bootstrap/scss/bootstrap';
 
+
+// my variables 
+$myLifthGrey:	#f9f5f2;
+$myGray:		#f2f3f2;
+$myLifthGreen:	#3d6f42;
+$myGreen:		#1e3120;
+//end my variables
+
+body{
+	max-width: 1200px;
+	margin: 0 auto;
+}
