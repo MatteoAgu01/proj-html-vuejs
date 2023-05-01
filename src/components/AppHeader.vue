@@ -3,14 +3,14 @@
 		<nav>
 			<div class="d-flex align-item-end justify-content-around py-3">
 				<div class="d-flex align-item-center">
-					<img src="../../public/images/avada-pet-supplies/dark-pet-logo.png" alt="logo">
+					<img src="../../public/image-pet/logo/dark-pet-logo-2x.png" alt="logo" id="headerLogo">
 				</div>
 				<div class=" d-flex align-item-baseline border rounded-pill p-2">
 					<i class="fa-solid fa-search align-self-center mx-2"></i>
 					<input class="border-0 my-searchbar" type="text" placeholder="Search...">
 				</div>
 				<div class="d-flex align-item-center">
-					<p class="align-self-center m-0"><b class="text-capitalize"> questions?</b>Call us : 1.800.123.4567
+					<p class="align-self-center m-0"><b class="text-capitalize px-2"> questions?</b >Call us: 1.800.123.4567
 					</p>
 				</div>
 				<div class="d-flex align-self-center">
@@ -20,9 +20,9 @@
 			</div>
 			<div class="d-flex justify-content-center">
 				<div v-for="(linkHeader, index) in linkNav.linkHeader" @key="index">
-					<ul class="">
-						<li class="d-flex align-item-center justify-content-center">
-							<p class="text-capitalize m-0">
+					<ul class="myUl">
+						<li class="d-flex align-item-center justify-content-center ">
+							<p class="text-capitalize m-0 myP">
 								{{ linkHeader.title }}
 							</p>
 							<i class="fa-solid fa-chevron-down d-flex align-self-center m-0"></i>
@@ -69,10 +69,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="d-flex align-items-end justify-content-end px-3 mt-2">
-					<img src="../../public/image-pet/header-image/food-transparent-5-200x112.png" alt="food-heder" class="px-2">
-					<p class="text-white m-0 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dicta.</p>
-					<a class="text-bg-tertiary px-2" href="">Visit the shop</a>
+				<div class="d-flex align-items-end justify-content-center px-3 mt-2">
+					<img src="../../public/image-pet/header-image/food-transparent-5-200x112.png" alt="food-heder" class="px-2 myFoodTraspartent">
+					<p class="text-white m-0 px-2  d-flex align-self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dicta.</p>
+					<a class="text-bg-tertiary px-2 d-flex align-self-center" href="">Visit the shop</a>
 				</div>
 			</section>
 		</div>
@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import linkHeader from '../assets/store'
+import {linkHeader} from '../assets/store'
 
 export default {
 	name: 'ciao',
@@ -102,6 +102,9 @@ $myLifthGreen: #3d6f42;
 $myGreen: #1e3120;
 
 //end my variables
+#headerLogo{
+	width: 40%;
+}
 .my-searchbar {
 	width: 300px;
 	background-color: #f9f5f2;
@@ -112,7 +115,7 @@ ul {
 	color: rgb(150, 147, 147);
 }
 
-ul:hover p {
+.myUl:hover .myP {
 	text-decoration: underline;
 	color: black;
 }
@@ -120,11 +123,12 @@ ul:hover p {
 nav {
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 50%;
 	z-index: 1000;
-	width: 100%;
+	width: 1600px;
 	min-height: 117px;
 	background-color: #f2f3f2;
+	transform: translate(-50%);
 }
 
 .myGreen {
@@ -147,6 +151,8 @@ nav {
 
 .myBgBanner{
 	width: 100%;
+	height: 95%;
+	min-height: 490px;
 	margin-bottom: 5px;
 	filter: grayscale(40%);
 }
@@ -155,5 +161,8 @@ nav {
 	position: absolute;
 	top: 20%;
 	left: 10%;
+}
+.myFoodTraspartent{
+	width: 180px;
 }
 </style>
