@@ -83,7 +83,7 @@
 import {linkHeader} from '../assets/store'
 
 export default {
-	name: 'ciao',
+	name: 'appHeader',
 	data() {
 		return {
 			linkNav: linkHeader,

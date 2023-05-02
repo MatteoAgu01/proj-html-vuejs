@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<div>
-			<ciao />
+			<appHeader />
 		</div>
 	</header>
 	<appMain />
@@ -9,12 +9,12 @@
 
 
 <script>
-import ciao from './components/AppHeader.vue'
+import appHeader from './components/AppHeader.vue'
 import appMain from './components/AppMain.vue';
 export default {
 	name: 'app',
 	components: {
-		ciao,
+		appHeader,
 		appMain,
 	},
 }

@@ -56,6 +56,18 @@
 			</div>
 			<button class="my-bg-green p-3 px-5 rounded-pill border-0">Read all articles</button>
 		</div>
+		<div class="my-bg-dark-green bg-img">
+			<appAccesories />
+			<div class="d-flex justify-content-around gap-2">
+				<appInfo :icon="info.icon" :caption="info.caption" :style="info.style" v-for="(info, index) in newInfo"
+					:key="index" />
+			</div>
+		</div>
+		<div class="d-flex flex-wrap justify-content-around">
+			<appLastShop :image="gadgetTwo.image" :name="gadgetTwo.name" :originalPrice="gadgetTwo.origi"
+				:price="gadgetTwo.price" :currency="gadgetTwo.currency" v-for="(gadgetTwo, index) in lastShop"
+				:key="index" class="d-flex flex-column align-items-center gap-4 " />
+		</div>
 	</main>
 </template>
 
@@ -65,6 +77,8 @@ import { food } from '../assets/store';
 import { gadgetOne } from '../assets/store';
 import { testimonials } from '../assets/store';
 import { newLetter } from '../assets/store'
+import { info } from '../assets/store';
+import { gadgetTwo } from '../assets/store';
 import firstCardSec from './AppCard.vue';
 import foodCard from './AppCardFood.vue';
 import appArrivals from './AppNewArrivals.vue';
@@ -72,6 +86,9 @@ import appGadgetOne from './AppGadgetOne.vue';
 import appTestimonials from './AppTestimonials.vue';
 import appMail from './AppMail.vue';
 import appArticles from './AppArticles.vue';
+import appAccesories from './AppAccesories.vue';
+import appInfo from './AppInfo.vue';
+import appLastShop from './AppLastShop.vue';
 export default {
 	name: 'appMain',
 	data() {
@@ -81,7 +98,8 @@ export default {
 			firstShop: gadgetOne,
 			userTestimonials: testimonials,
 			newArticles: newLetter,
-
+			newInfo: info,
+			lastShop: gadgetTwo
 		}
 	},
 	components: {
@@ -91,7 +109,10 @@ export default {
 		appGadgetOne,
 		appTestimonials,
 		appMail,
-		appArticles
+		appArticles,
+		appAccesories,
+		appInfo,
+		appLastShop
 	},
 }
 
@@ -105,6 +126,10 @@ export default {
 
 #bg-image {
 	background: rgb(30, 49, 32);
+	background-image: url(../../public/image-pet/bg-transparent-3.png);
+}
+
+.bg-img {
 	background-image: url(../../public/image-pet/bg-transparent-3.png);
 }
 

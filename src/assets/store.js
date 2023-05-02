@@ -169,5 +169,81 @@ let newLetter = [
 	}
 ]
 
-export { linkHeader, firstCard, food, gadgetOne, testimonials, newLetter, };
+let info = [
+	{
+		icon:'fa-sharp fa-solid fa-truck',
+		style:'color: #ffffff',
+		caption:'free worldwide'
+	},
+	{
+		icon:'fa-solid fa-map',
+		style:'color: #ffffff',
+		caption:'find stores near you'
+	},
+	{
+		icon:'fa-regular fa-dollar-sign',
+		style:'color: #ffffff',
+		caption:'best price garanted'
+	},
+	{
+		icon:'fa-regular fa-credit-card',
+		style:'color: #ffffff',
+		caption:'all credit card accepted'
+	},
+]
+
+let gadgetTwo = [
+	{
+		name: 'colorefull ball set',
+		image: '../../public/image-pet/last-shop-image/product-2-200x200.jpg',
+		discount: false,
+		originaPrice:'25.00',
+		price: '25.00',
+		currency: '$'
+	},
+	{
+		name: 'dog bone',
+		image: '../../public/image-pet/last-shop-image/product-3-200x200.jpg',
+		discount: false,
+		originaPrice:'25.00',
+		price: '25.00',
+		currency: '$'
+	},
+	{
+		name: 'animals trasport bag',
+		image: '../../public/image-pet/last-shop-image/product-4-200x200.jpg',
+		discount: true,
+		originaPrice:'35.00',
+		price: '25.00',
+		currency: '$'
+	},
+	{
+		name: 'animal trasport cage',
+		image: '../../public/image-pet/last-shop-image/product-5-200x200.jpg',
+		discount: false,
+		originaPrice:'12.00',
+		price: '12.00',
+		currency: '$'
+	},
+	{
+		name: 'colored pet bed',
+		image: '../../public/image-pet/last-shop-image/product-8-200x200.jpg',
+		discount: false,
+		originaPrice:'26.00',
+		price: '12.00',
+		currency: '$'
+	},
+	{
+		name: 'closable cat litter',
+		image: '../../public/image-pet/last-shop-image/product-10-200x200.jpg',
+		discount: false,
+		originaPrice:'16.00',
+		price: '12.00',
+		currency: '$'
+	},
+
+];
+
+
+export { linkHeader, firstCard, food, gadgetOne, testimonials, newLetter, info, gadgetTwo };
 
