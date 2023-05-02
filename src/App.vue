@@ -4,11 +4,12 @@
 			<ciao />
 		</div>
 	</header>
-	<appMain/>
+	<appMain />
 </template>
 
 
 <script>
+import { gadgetOne } from './assets/store';
 import ciao from './components/AppHeader.vue'
 import appMain from './components/AppMain.vue';
 export default {
@@ -16,11 +17,9 @@ export default {
 	components: {
 		ciao,
 		appMain,
-	}
+	},
 }
 </script>
 
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

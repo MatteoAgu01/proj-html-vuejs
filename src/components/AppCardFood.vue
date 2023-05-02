@@ -1,5 +1,5 @@
 <template>
-	<div class="card-body d-flex my-bg-dark-green p-3 py-5 m-2">
+	<div class="card-body d-flex my-bg-dark-green p-3 py-5 m-2 mb-5">
 		<div>
 			<h3 class="text-capitalize text-white py-3">{{ name }}</h3>
 			<p class="text-capitalize my-text-green fw-bold">{{ caption }}</p>

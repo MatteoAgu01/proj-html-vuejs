@@ -14,6 +14,23 @@ $myLifthGreen:	#3d6f42;
 $myGreen:		#1e3120;
 //end my variables
 
+
+.my-green{
+	color: #3d6f42;
+}
+m.my-text-green{
+	color: #3d6f42;
+	}
+	
+	.my-text-dark-green{
+	color: #1e3120;
+	}
+	.my-bg-green{
+		background-color: #3d6f42;
+		color: #f2f3f2;
+	}
+	
+
 body{
 	max-width: 1600px;
 	margin: 0 auto;
@@ -23,3 +40,5 @@ main{
 	max-width: 1400px;
 	margin: 0 auto;
 }
+
+
