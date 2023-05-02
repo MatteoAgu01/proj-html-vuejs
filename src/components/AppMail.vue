@@ -8,7 +8,7 @@
 		</div>
 		<div>
 			<input class="rounded-pill border-0 mail-grey p-3 px-5 mx-2" type="email" name="" id="" placeholder="insert your mail...*">
-			<button class="text-white p-3 px-5 mx-2 border-0 rounded-pill my-bg-green">subcribe</button>
+			<button id="button-hover" class="text-white p-3 px-5 mx-2 border-0 rounded-pill my-bg-green">subcribe</button>
 		</div>
 	</div>
 </template>

@@ -54,7 +54,7 @@
 				<appArticles class="appArticles" :image="newLetter.image" :caption="newLetter.caption"
 					:date="newLetter.date" v-for="(newLetter, index) in newArticles" :key="index" />
 			</div>
-			<button class="my-bg-green p-3 px-5 rounded-pill border-0">Read all articles</button>
+			<button class="my-bg-green p-3 px-5 rounded-pill border-0 button-my-bg-green">Read all articles</button>
 		</div>
 		<div class="my-bg-dark-green bg-img">
 			<appAccesories />

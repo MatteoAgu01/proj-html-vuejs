@@ -35,7 +35,7 @@
 				<p class="fw-bold">subcribe to our news letter</p>
 				<input class="bg-body-ligth border-0 rounded-pill px-3 py-1 my-3" type="email" name="" id=""
 					placeholder="insert your email...*"> <br>
-				<button class="border-0 rounded-pill px-3 py-1 my-3 my-bg-green">subcribe</button>
+				<button class="border-0 rounded-pill px-3 py-1 my-3 my-bg-green button-my-bg-green">subcribe</button>
 			</div>
 		</div>
 		<div class="py-3">
@@ -69,4 +69,6 @@ export default {
 	background-image: url(../../public/image-pet/bg-transparent-3.png);
 	background-color: rgb(20, 54, 20);
 }
+
+
 </style>

@@ -37,6 +37,14 @@ $myGreen: #1e3120;
 	color: #f2f3f2;
 }
 
+button:hover{
+	cursor: pointer;
+	background-color: rgb(138, 209, 138);
+	color: #3d6f42;
+	transition: 0.5s;
+	rotate: 360deg;
+	transform: scale(200%);
+}
 
 
 

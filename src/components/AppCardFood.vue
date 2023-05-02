@@ -8,7 +8,7 @@
 			<img class="food-img" :src="image" :alt="name">
 		</div>
 		<div class="py-3">
-			<button class="my-bg-green border-0 p-2">shop  {{ type }} food</button>
+			<button class="my-bg-green border-0 p-2 button-my-bg-green">shop  {{ type }} food</button>
 		</div>
 	</div>
 </template>
