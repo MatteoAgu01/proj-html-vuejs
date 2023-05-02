@@ -244,6 +244,5 @@ let gadgetTwo = [
 
 ];
 
-
 export { linkHeader, firstCard, food, gadgetOne, testimonials, newLetter, info, gadgetTwo };
 
