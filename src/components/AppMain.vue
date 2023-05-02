@@ -45,7 +45,16 @@
 				</div>
 
 			</div>
-				<appMail />
+			<appMail />
+		</div>
+		<div class="text-center">
+			<h2 class="text-capitalize">get the best tips & triks</h2>
+			<span class="text-capitalize">recent articles</span>
+			<div class="d-flex flex-wrap justify-content-around p-5">
+				<appArticles class="appArticles" :image="newLetter.image" :caption="newLetter.caption"
+					:date="newLetter.date" v-for="(newLetter, index) in newArticles" :key="index" />
+			</div>
+			<button class="my-bg-green p-3 px-5 rounded-pill border-0">Read all articles</button>
 		</div>
 	</main>
 </template>
@@ -55,12 +64,14 @@ import { firstCard } from '../assets/store';
 import { food } from '../assets/store';
 import { gadgetOne } from '../assets/store';
 import { testimonials } from '../assets/store';
+import { newLetter } from '../assets/store'
 import firstCardSec from './AppCard.vue';
 import foodCard from './AppCardFood.vue';
 import appArrivals from './AppNewArrivals.vue';
 import appGadgetOne from './AppGadgetOne.vue';
 import appTestimonials from './AppTestimonials.vue';
 import appMail from './AppMail.vue';
+import appArticles from './AppArticles.vue';
 export default {
 	name: 'appMain',
 	data() {
@@ -68,7 +79,8 @@ export default {
 			card: firstCard,
 			foodCardCom: food,
 			firstShop: gadgetOne,
-			userTestimonials: testimonials
+			userTestimonials: testimonials,
+			newArticles: newLetter,
 
 		}
 	},
@@ -79,6 +91,7 @@ export default {
 		appGadgetOne,
 		appTestimonials,
 		appMail,
+		appArticles
 	},
 }
 
@@ -107,5 +120,9 @@ export default {
 
 .my-card img {
 	width: 50px;
+}
+
+.appArticles {
+	width: calc(100% / 4 - 110px);
 }
 </style>

@@ -65,7 +65,7 @@ let firstCard = [
 
 		]
 	},
-]
+];
 
 let food = [
 	{
@@ -88,7 +88,7 @@ let food = [
 		caption: 'freezeee-dried dog food',
 		type: 'frozen'
 	}
-]
+];
 
 let gadgetOne = [
 	{
@@ -123,7 +123,7 @@ let gadgetOne = [
 		price: '12.00',
 		currency: '$'
 	},
-]
+];
 
 let testimonials = [
 	{
@@ -144,7 +144,30 @@ let testimonials = [
 		name:'sam lewis',
 		theme:'ThemeFusion'
 	}
+];
+
+let newLetter = [
+	{
+		image:'../../public/image-pet/news-img/blog-1-200x200.jpg',
+		caption:'how to \'loose leash walk\'your dog',
+		date:'April 21st, 2020'
+	},
+	{
+		image:'../../public/image-pet/news-img/blog-2-200x200.jpg',
+		caption:'stop cats from sceatching furniture',
+		date:'April 19th, 2020'
+	},
+	{
+		image:'../../public/image-pet/news-img/blog-3-200x200.jpg',
+		caption:'where to buy the best pet food',
+		date:'April 18th, 2020'
+	},
+	{
+		image:'../../public/image-pet/news-img/blog-4-200x200.jpg',
+		caption:'proper care or your pet tooyse',
+		date:'April 17th, 2020'
+	}
 ]
 
-export { linkHeader, firstCard, food, gadgetOne,testimonials };
+export { linkHeader, firstCard, food, gadgetOne, testimonials, newLetter, };
 

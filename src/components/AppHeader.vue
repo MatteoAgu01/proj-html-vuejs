@@ -125,7 +125,7 @@ nav {
 	top: 0;
 	left: 50%;
 	z-index: 1000;
-	width: 1600px;
+	width: 100%;
 	min-height: 117px;
 	background-color: #f2f3f2;
 	transform: translate(-50%);

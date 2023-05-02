@@ -9,7 +9,6 @@
 
 
 <script>
-import { gadgetOne } from './assets/store';
 import ciao from './components/AppHeader.vue'
 import appMain from './components/AppMain.vue';
 export default {

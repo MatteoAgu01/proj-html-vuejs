@@ -8,37 +8,34 @@ $fa-font-path: './webfonts';
 
 
 // my variables 
-$myLifthGrey:	#f9f5f2;
-$myGray:		#f2f3f2;
-$myLifthGreen:	#3d6f42;
-$myGreen:		#1e3120;
+$myLifthGrey: #f9f5f2;
+$myGray: #f2f3f2;
+$myLifthGreen: #3d6f42;
+$myGreen: #1e3120;
 //end my variables
 
 
-.my-green{
+.my-green {
 	color: #3d6f42;
 }
-m.my-text-green{
-	color: #3d6f42;
-	}
-	
-	.my-text-dark-green{
-	color: #1e3120;
-	}
-	.my-bg-green{
-		background-color: #3d6f42;
-		color: #f2f3f2;
-	}
-	
 
-body{
+.my-text-green {
+	color: #3d6f42;
+}
+
+.my-text-dark-green {
+	color: #1e3120;
+}
+
+.my-bg-green {
+	background-color: #3d6f42;
+	color: #f2f3f2;
+}
+
+
+
+
+main {
 	max-width: 1600px;
 	margin: 0 auto;
 }
-
-main{
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
-
